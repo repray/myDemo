@@ -1,0 +1,9 @@
+新建springboot项目:
+
+Description:
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+Reason: Failed to determine a suitable driver class
+解决方案: https://blog.csdn.net/qq_40223688/article/details/88191732
+
+java.lang.IllegalArgumentException:Invalid character found in the request
+解决办法: https://blog.csdn.net/sinat_32857543/article/details/109525752
