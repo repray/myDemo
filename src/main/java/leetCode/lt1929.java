@@ -5,6 +5,7 @@ package leetCode;
  * @Author Li Yang
  * @Created on 2021/8/11.
  * @Desc 1929.数组串联 https://leetcode-cn.com/problems/concatenation-of-array/
+ * 难度 简单
  * @tips 力扣算法题通常不允许使用现成的工具类
  */
 public class lt1929 {
