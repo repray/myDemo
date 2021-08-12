@@ -1,3 +1,5 @@
+该文件为该项目使用过程中的笔记文件:
+
 新建springboot项目:
 
 Description:
@@ -7,3 +9,5 @@ Reason: Failed to determine a suitable driver class
 
 java.lang.IllegalArgumentException:Invalid character found in the request
 解决办法: https://blog.csdn.net/sinat_32857543/article/details/109525752
+
+项目的没有识别为java项目时,找到项目的pom文件,右键菜单,maven刷新项目,可以重新刷新为maven项目
