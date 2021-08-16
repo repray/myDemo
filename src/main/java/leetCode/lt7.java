@@ -1,8 +1,5 @@
 package leetCode;
 
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * @Author Li Yang
  * @Created on 2021/8/16.
@@ -26,6 +23,5 @@ public class lt7 {
         catch (Exception e){
             return 0;
         }
-
     }
 }
