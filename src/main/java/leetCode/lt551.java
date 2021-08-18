@@ -24,11 +24,11 @@ public class lt551 {
             }
             if (split[i].equals("L")) {
                 if (i + 1 < s.length()) {
-                    if (split[i + 1].equals("L")){
+                    if (split[i + 1].equals("L")) {
                         L++;
                     }
-                    if (!split[i + 1].equals("L")){
-                        L=1;
+                    if (!split[i + 1].equals("L")) {
+                        L = 1;
                     }
                 }
                 if (L >= 3) {
@@ -48,14 +48,15 @@ public class lt551 {
 
     /**
      * 改良后的方法,使用indexOf判断是否存在连续的 LLL 判断第一个A的位置和最后一个A的位置是否相同来判断A的数量是否超过2
+     *
      * @param s
      * @return
      */
     public static boolean checkRecordImprove(String s) {
-        if (s.indexOf("LLL")!=-1){
+        if (s.indexOf("LLL") != -1) {
             return false;
         }
-        if (s.indexOf("A")!=(s.lastIndexOf("A"))){
+        if (s.indexOf("A") != (s.lastIndexOf("A"))) {
             return false;
         }
         return true;

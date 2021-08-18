@@ -20,7 +20,7 @@ public class lt7 {
             return afterReverse.length() > 32 ? 0 : (x < 0 ? Integer.parseInt(afterReverse) * -1 : Integer.parseInt(afterReverse));
         }
         //转换前为正常int类型范围整数,转换后超过int类型
-        catch (Exception e){
+        catch (Exception e) {
             return 0;
         }
     }
