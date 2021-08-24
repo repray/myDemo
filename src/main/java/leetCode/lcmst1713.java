@@ -10,13 +10,14 @@ import java.lang.reflect.Array;
 public class lcmst1713 {
 
     public static void main(String[] args) {
-        String[] dictionary = {"bt","vbtbvtvvbbvtbvvbbbvbtbbv","bvvbbbvvvbvttbtbvtvtvvbttbbbtvvvb","btttbvbbbtbbtbvvttbvbvtvbtbbttb","bt","vvbvbvbvtbvbvvvvtv","tbvvvtttvtbvbtttvvbtvvvvtvvbvvtvvbbvbbbvb","v","bvb","vvtbvtvbttbttvvbvttbt","btbtbtttvbbtbttbtvvttbvtbtvtbvvtbbbb","bttbvbbttvvbtvvvvb","bvvbvbvttbvtbvvtbttvvvvtvbtvbttbbvvtvtvv","vbtttt","btbvbbbvbtvtbvvv","b","tbtbtv","vbvbbvvbvbbvvb","vbvvtvbvbvbttvbvbtvbtbtvtbvbbtb","bvvbvvttttttbtvvvttvbvtvvbvtbtvtbvttvvtbt","bvtbttv","bbbt","vtt","ttvv","b","vbb","vtvvbtttvtbbvvbbtbb","vvv","vvvvbbbtbbbvbbbb","ttvvbtvv","v","btvbbvtbbvbvtvttvvbbbtbvvvtbtb","vv","btbttbtbbvbvvbvttbttvtbbtbvtttvbbtbbtvtvvvvbbttvtvvbbbv","ttvbbbbttbtbtb","tvvbvbvvb","vv","ttbttvtvbtbbbbv","bvvvtbbvvvbtvbvtvtvvvvbb","vtbvvbvvvvvttvbbttbbvtvt","tbvbbt","b","v","tvbbtvvtvvtbtbttvvvb","tbttbttbbbtbtvtvtvtbbbvvtbbbvbbvvvbbttvvt","bbvttvtvvtbvbbttvbbtbvvttbvbvbtbvvvbbbvbvbvbtvbtvvvtvvtbttbttbbvbbbttvvvbvvtb","vttvvbvv","tbttbvvttvbtvvtbbvvv","bvbbbbbbbb","vtbvvtbbvtt","bvttbvvbvb","tvttttbbvvvbbtttvvv"};
+        String[] dictionary = {"bt", "vbtbvtvvbbvtbvvbbbvbtbbv", "bvvbbbvvvbvttbtbvtvtvvbttbbbtvvvb", "btttbvbbbtbbtbvvttbvbvtvbtbbttb", "bt", "vvbvbvbvtbvbvvvvtv", "tbvvvtttvtbvbtttvvbtvvvvtvvbvvtvvbbvbbbvb", "v", "bvb", "vvtbvtvbttbttvvbvttbt", "btbtbtttvbbtbttbtvvttbvtbtvtbvvtbbbb", "bttbvbbttvvbtvvvvb", "bvvbvbvttbvtbvvtbttvvvvtvbtvbttbbvvtvtvv", "vbtttt", "btbvbbbvbtvtbvvv", "b", "tbtbtv", "vbvbbvvbvbbvvb", "vbvvtvbvbvbttvbvbtvbtbtvtbvbbtb", "bvvbvvttttttbtvvvttvbvtvvbvtbtvtbvttvvtbt", "bvtbttv", "bbbt", "vtt", "ttvv", "b", "vbb", "vtvvbtttvtbbvvbbtbb", "vvv", "vvvvbbbtbbbvbbbb", "ttvvbtvv", "v", "btvbbvtbbvbvtvttvvbbbtbvvvtbtb", "vv", "btbttbtbbvbvvbvttbttvtbbtbvtttvbbtbbtvtvvvvbbttvtvvbbbv", "ttvbbbbttbtbtb", "tvvbvbvvb", "vv", "ttbttvtvbtbbbbv", "bvvvtbbvvvbtvbvtvtvvvvbb", "vtbvvbvvvvvttvbbttbbvtvt", "tbvbbt", "b", "v", "tvbbtvvtvvtbtbttvvvb", "tbttbttbbbtbtvtvtvtbbbvvtbbbvbbvvvbbttvvt", "bbvttvtvvtbvbbttvbbtbvvttbvbvbtbvvvbbbvbvbvbtvbtvvvtvvtbttbttbbvbbbttvvvbvvtb", "vttvvbvv", "tbttbvvttvbtvvtbbvvv", "bvbbbbbbbb", "vtbvvtbbvtt", "bvttbvvbvb", "tvttttbbvvvbbtttvvv"};
         String sentence = "btbvtttttbvttbvvbbtvvbvbvvbtbtbtvbtttbvbbbtbbtbvvttbvbvtvbtbbttbvvbvbtttbvttbvvbbvvv";
-        System.out.println(respace(dictionary,sentence));
+        System.out.println(respace(dictionary, sentence));
     }
 
     /**
      * 感谢力扣有历史记录的功能,找到了之前的提交记录
+     *
      * @param dictionary
      * @param sentence
      * @return
