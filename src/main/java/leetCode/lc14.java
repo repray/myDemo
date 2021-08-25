@@ -7,34 +7,27 @@ import java.util.Arrays;
  * @Created on 2021/8/24.
  * @Desc 14. 最长公共前缀  https://leetcode-cn.com/problems/longest-common-prefix/
  */
+
 public class lc14 {
     public static void main(String[] args) {
-        String[] strs = {"c", "cbc", "c", "ca"};
+        String[] strs = {"abab", "aba", ""};
         longestCommonPrefix(strs);
         System.out.println(longestCommonPrefix(strs));
     }
 
     public static String longestCommonPrefix(String[] strs) {
-        int k = 0;
-        for (int i = 0; i < strs.length - 1; i++) {
-            if (strs[i].length() > strs[i + 1].length()) {
-                k = i + 1;
+        if (strs == null || strs.length == 0) {
+            return "";
+        }
+        String res = strs[0];
+        for (String str : strs) {
+            //表示必须从0开始包含
+            while (str.indexOf(res) != 0) {
+                //开始滑动
+                res = res.substring(0, res.length() - 1);
             }
         }
-        String firStr = strs[k];
-        String prefix = "";
-        for (int i = 0; i < firStr.length(); i++) {
-            for (String str : strs) {
-                if (str == "") {
-                    return "";
-                }
-                if (firStr.charAt(i) != str.charAt(i)) {
-                    return prefix;
-
-                }
-            }
-            prefix = prefix + firStr.charAt(i);
-        }
-        return prefix;
+        return res;
     }
+
 }
