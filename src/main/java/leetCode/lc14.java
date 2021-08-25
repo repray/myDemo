@@ -11,7 +11,6 @@ import java.util.Arrays;
 public class lc14 {
     public static void main(String[] args) {
         String[] strs = {"abab", "aba", ""};
-        longestCommonPrefix(strs);
         System.out.println(longestCommonPrefix(strs));
     }
 
@@ -24,6 +23,7 @@ public class lc14 {
         String res = strs[0];
         for (String str : strs) {
             //用indexOf的返回结果判断前缀是否一致
+            //用while循环判断前缀是否符合,不符合则
             while (str.indexOf(res) != 0) {
                 //如果不一致,则说明该索引不是公共索引,将索引长度调整-1
                 //如果res是最小长度的值,也不包含索引,则说明该数组没有公共前缀,不是最小长度则慢慢缩减res的值进行比较
