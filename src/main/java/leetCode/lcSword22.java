@@ -9,14 +9,30 @@ package leetCode;
 
 public class lcSword22 {
     public static void main(String[] args) {
-
+        ListNode firstNode = new ListNode(1);
+        ListNode secondNode = new ListNode(2);
+        ListNode thitdNode = new ListNode(3);
+        ListNode fourthNode = new ListNode(4);
+        firstNode.next = secondNode;
+        secondNode.next = thitdNode;
+        thitdNode.next = fourthNode;
+        System.out.println(getKthFromEnd(firstNode, 3).val);
     }
 
-    public ListNode getKthFromEnd(ListNode head, int k) {
-        return null;
+    public static ListNode getKthFromEnd(ListNode head, int k) {
+        ListNode fast = head, slow = head;
+        while (k > 0) {
+            fast = fast.next;
+            k--;
+        }
+        while (fast != null) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+        return slow;
     }
 
-    public class ListNode {
+    public static class ListNode {
         int val;
         ListNode next;
 
