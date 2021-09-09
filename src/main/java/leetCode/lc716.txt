@@ -18,16 +18,28 @@
 | 200                 |
 +---------------------+
 
-难点有两个:一个是查询第二高的薪水,一个是没有第二高的薪水时返回null
+考察点有两个:一个是查询第二高的薪水,一个是没有第二高的薪水时返回null
 
-SELECT
-	Salary AS SecondHighestSalary
-FROM
-	Employee
-WHERE
-	Salary < ( SELECT max( Salary ) FROM Employee )
-ORDER BY
-	Salary DESC
-	LIMIT 1
+SELECT Salary AS SecondHighestSalary FROM Employee WHERE Salary < ( SELECT max( Salary ) FROM Employee )
+ORDER BY Salary DESC LIMIT 1
 
 这条sql满足第一条,不满足第二条
+
+IFNULL() 函数用于判断第一个表达式是否为 NULL，如果为 NULL 则返回第二个参数的值，如果不为 NULL 则返回第一个参数的值。
+IFNULL() 函数语法格式为：
+IFNULL(expression, alt_value)
+举例:
+SELECT IFNULL(NULL, "RUNOOB");
+以上实例输出结果为：
+RUNOOB
+
+SELECT IFNULL("Hello", "RUNOOB");
+以上实例输出结果为：
+Hello
+
+最后sql修改为:
+SELECT
+	IFNULL(
+	( SELECT Salary FROM Employee WHERE Salary < ( SELECT max( Salary ) FROM Employee ) ORDER BY Salary DESC LIMIT 1 ),
+NULL
+	) AS SecondHighestSalary
