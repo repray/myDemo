@@ -2,7 +2,6 @@
 链接:https://leetcode-cn.com/problems/second-highest-salary/
 
 编写一个 SQL 查询，获取 Employee 表中第二高的薪水（Salary）。
-
 +----+--------+
 | Id | Salary |
 +----+--------+
@@ -11,7 +10,6 @@
 | 3  | 300    |
 +----+--------+
 例如上述 Employee 表，SQL查询应该返回 200 作为第二高的薪水。如果不存在第二高的薪水，那么查询应返回 null。
-
 +---------------------+
 | SecondHighestSalary |
 +---------------------+
@@ -37,6 +35,12 @@ SELECT IFNULL("Hello", "RUNOOB");
 以上实例输出结果为：
 Hello
 
+遂修改为:
+SELECT IFNULL((SELECT Salary AS SecondHighestSalary FROM Employee WHERE Salary < ( SELECT max( Salary ) FROM Employee )
+ORDER BY Salary DESC LIMIT 1),null)
+这样只会输出null
+
+因为期望输出结果中可能存在 SecondHighestSalary:null的情况,所以查询结果需要起别名,并不能只是给sql中的查询结果起别名,需要给ifnull函数的返回结果起别名
 最后sql修改为:
 SELECT
 	IFNULL(
