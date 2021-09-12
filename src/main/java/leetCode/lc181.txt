@@ -27,3 +27,13 @@ FROM
 WHERE
   a.ManagerId = b.Id
   AND a.Salary > b.Salary;
+  单表中有关联关系的,可以用别名声明两张表,将单表变成两张有关联关系的表,然后进行关联关系查询,并比较
+
+join解法
+SELECT
+  a.NAME AS Employee
+FROM
+  Employee AS a
+  JOIN Employee AS b ON a.ManagerId = b.Id
+  AND a.Salary > b.Salary;
+
