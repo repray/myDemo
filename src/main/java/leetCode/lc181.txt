@@ -27,6 +27,7 @@ FROM
 WHERE
   a.ManagerId = b.Id
   AND a.Salary > b.Salary;
+
   单表中有关联关系的,可以用别名声明两张表,将单表变成两张有关联关系的表,然后进行关联关系查询,并比较
 
 join解法
@@ -36,4 +37,6 @@ FROM
   Employee AS a
   JOIN Employee AS b ON a.ManagerId = b.Id
   AND a.Salary > b.Salary;
+
+  join解法就是更明显的将一张表当做两张表来使用,并使用表中的关联字段作为条件
 
