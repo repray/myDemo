@@ -20,10 +20,10 @@ Employee表包含所有员工，他们的经理也属于员工。每个员工都
 +----------+
 
 SELECT
-    a.Name AS 'Employee'
+  a.Name AS "Employee"
 FROM
-    Employee AS a,
-    Employee AS b
+  Employee a,
+  Employee b
 WHERE
-    a.ManagerId = b.Id
-        AND a.Salary > b.Salary;
+  a.ManagerId = b.Id
+  AND a.Salary > b.Salary;
