@@ -1,7 +1,5 @@
 package leetCode;
 
-import java.util.Arrays;
-
 /**
  * @Author Li Yang
  * @Created on 2021/8/24.
@@ -10,11 +8,11 @@ import java.util.Arrays;
 
 public class lc14 {
     public static void main(String[] args) {
-        String[] strs = {"abab", "aba", ""};
-        System.out.println(longestCommonPrefix(strs));
+//        String[] strs = {"abab", "aba", ""};
+//        System.out.println(this.longestCommonPrefix(strs));
     }
 
-    public static String longestCommonPrefix(String[] strs) {
+    public String longestCommonPrefix(String[] strs) {
         //先判断数组是否为空,为空则直接返回
         if (strs == null || strs.length == 0) {
             return "";
@@ -32,5 +30,6 @@ public class lc14 {
         }
         return res;
     }
+
 
 }
