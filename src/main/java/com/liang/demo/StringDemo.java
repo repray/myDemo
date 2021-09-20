@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author : liyang
  * @date : 2021/9/18
- * String类的基本操作
+ * String类的常用方法
  */
 public class StringDemo {
 
