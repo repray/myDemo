@@ -38,5 +38,9 @@ public class StringDemo {
         System.out.println(word.toLowerCase());
         //toUpperCase 将字符串全部转为大写
         System.out.println(word.toUpperCase());
+        //substring方法,按下表截取,substring(6)为截取第6位之后的所有字符,含第六位
+        System.out.println(word.substring(6));
+        //substring(6,10)为截取第6位,到第10位的所有字符含第六位,不含第10位
+        System.out.println(word.substring(6,10));
     }
 }
