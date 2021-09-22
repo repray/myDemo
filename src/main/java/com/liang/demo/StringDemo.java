@@ -42,5 +42,9 @@ public class StringDemo {
         System.out.println(word.substring(6));
         //substring(6,10)为截取第6位,到第10位的所有字符含第六位,不含第10位
         System.out.println(word.substring(6,10));
+        //word.startsWith("H") 判断字符串是否为该字符开头
+        System.out.println(word.startsWith("H"));
+        //word.startsWith("H",2)判断字符串的指定位置是否为是否为该字符开头
+        System.out.println(word.startsWith("W",3));
     }
 }
