@@ -46,5 +46,15 @@ public class StringDemo {
         System.out.println(word.startsWith("H"));
         //word.startsWith("H",2)判断字符串的指定位置是否为是否为该字符开头
         System.out.println(word.startsWith("W",3));
+        String str1 = "hi world hi java";
+        //equals判断文本内容是否一致
+        System.out.println(str1.equals(word));
+        //equalsIgnoreCase 不区分大小写判断文本是否一致
+        System.out.println(str1.equalsIgnoreCase(str1));
+        String str2 = " hi world hi java ";
+        //trim 去掉字符串两端空格
+        System.out.println(str2.trim());
+        //concat 在原有的字符串的基础上加上指定字符串
+        System.out.println(str2.concat("i love code!"));
     }
 }
