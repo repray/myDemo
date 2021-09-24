@@ -8,9 +8,9 @@ import java.util.Map;
 /**
  * @Author Li Yang
  * @Created on 2021/9/8.
- * @Desc
+ * @Desc hashmap类常用方法
  */
-public class hashMapDemo {
+public class HashMapDemo {
 
     public static void main(String[] args) throws Exception {
         //hashMap在初始化的时候如果没有指定容量,会默认为16,16是hashMap的长度
