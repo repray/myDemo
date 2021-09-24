@@ -11,8 +11,18 @@ public class StringDemo {
 
     public static void main(String[] args) {
         //the firsr line code!
+        //String类创建的几种方式
+        //直接声明并赋值
         String word = "Hello World";
+        //先创建一个string类
+        String newWord = new String();
+        //再赋值
+        newWord = "newWord";
+        //String 对象创建并赋值
+        String newestWord = new String("newestWord");
         System.out.println(word);
+        System.out.println(newWord);
+        System.out.println(newestWord);
         //字符串可直接用+号拼接
         word = word +" Hello Java";
         //length方法,返回字符串的长度
