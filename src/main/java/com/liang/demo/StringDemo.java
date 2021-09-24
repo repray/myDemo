@@ -66,5 +66,6 @@ public class StringDemo {
         System.out.println(str2.trim());
         //concat 在原有的字符串的基础上加上指定字符串
         System.out.println(str2.concat("i love code!"));
+        //常用的String类方法,大概就是这些了吧,以后就不再更新了
     }
 }
