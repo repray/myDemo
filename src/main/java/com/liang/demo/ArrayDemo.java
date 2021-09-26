@@ -21,6 +21,8 @@ public class ArrayDemo {
         for (int i : arr) {
             System.out.println(i);
         }
+        //数组的长度.length
+        System.out.println("arrays的长度是:" + arrays.length);
         //直接打印数组,输出的是数组的内存地址
         System.out.println(arr);
         //二维数组的声明
