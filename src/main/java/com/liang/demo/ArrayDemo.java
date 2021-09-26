@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author : liyang
  * @date : 2021/9/25
- * array数组常用方法
+ * java - array数组常用方法
  */
 public class ArrayDemo {
     public static void main(String[] args) {
