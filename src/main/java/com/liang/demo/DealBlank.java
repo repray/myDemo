@@ -24,6 +24,7 @@ public class DealBlank {
             }
 
         }
+        //判断待处理不定长空格的长度,如果>1再进行处理
         if (blankLength.length() > 1) {
             word = word.replace(blankLength, "______");
         }
