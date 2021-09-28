@@ -7,7 +7,7 @@ package com.liang.demo;
  */
 public class DealBlank {
     public static void main(String[] args) {
-        
+
     }
 
     //处理文字中的空格,全部替换为6个下划线______
@@ -24,7 +24,9 @@ public class DealBlank {
             }
 
         }
-        word = word.replace(blankLength, "______");
+        if (blankLength.length() > 1) {
+            word = word.replace(blankLength, "______");
+        }
         return word;
     }
 }
