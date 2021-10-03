@@ -1,5 +1,11 @@
 package com.liang.demo.MqttDemo;
 
+/**
+ * @Author Li Yang
+ * @Created on 2021/10/3.
+ * @Desc mqtt消息发送客户端 -服务器向多个客户端推送主题，即不同客户端可向服务器订阅相同主题
+ */
+
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttDeliveryToken;
@@ -9,23 +15,20 @@ import org.eclipse.paho.client.mqttv3.MqttPersistenceException;
 import org.eclipse.paho.client.mqttv3.MqttTopic;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
-/**
- * @Author Li Yang
- * @Created on 2021/9/30.
- * @Desc 服务器向多个客户端推送主题，即不同客户端可向服务器订阅相同主题0.
- */
-
 public class ServerMQTT {
+
     //tcp://MQTT安装的服务器地址:MQTT定义的端口号
-    public static final String HOST = "tcp://localhost:1883";
+    public static final String HOST = "tcp://127.0.0.1:1883";
     //定义一个主题
     public static final String TOPIC = "topic11";
     //定义MQTT的ID，可以在MQTT服务配置中指定
     private static final String clientid = "server11";
+
     private MqttClient client;
     private MqttTopic topic11;
-    private String userName = "mosquitto";
-    private String passWord = "";
+    private String userName = "admin";
+    private String passWord = "password";
+
     private MqttMessage message;
 
     /**
@@ -54,6 +57,7 @@ public class ServerMQTT {
         try {
             client.setCallback(new PushCallback());
             client.connect(options);
+
             topic11 = client.getTopic(TOPIC);
         } catch (Exception e) {
             e.printStackTrace();

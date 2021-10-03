@@ -1,5 +1,11 @@
 package com.liang.demo.MqttDemo;
 
+/**
+ * @Author Li Yang
+ * @Created on 2021/10/3.
+ * mqtt-消息接受客户端
+ */
+
 import java.util.concurrent.ScheduledExecutorService;
 
 import org.eclipse.paho.client.mqttv3.MqttClient;
@@ -8,19 +14,16 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttTopic;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
-/**
- * @Author Li Yang
- * @Created on 2021/9/30.
- * @Desc Description:
- */
 public class ClientMQTT {
-    public static final String HOST = "tcp://localhost:1883";
+
+    public static final String HOST = "tcp://127.0.0.1:1883";
     public static final String TOPIC = "topic11";
     private static final String clientid = "client11";
     private MqttClient client;
     private MqttConnectOptions options;
     private String userName = "admin";
     private String passWord = "password";
+
     private ScheduledExecutorService scheduler;
 
     private void start() {
@@ -44,11 +47,13 @@ public class ClientMQTT {
             MqttTopic topic = client.getTopic(TOPIC);
             //setWill方法，如果项目中需要知道客户端是否掉线可以调用该方法。设置最终端口的通知消息
             options.setWill(topic, "close".getBytes(), 2, true);
+
             client.connect(options);
             //订阅消息
             int[] Qos = {1};
             String[] topic1 = {TOPIC};
             client.subscribe(topic1, Qos);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
