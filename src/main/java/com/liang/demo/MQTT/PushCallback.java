@@ -1,4 +1,4 @@
-package com.liang.demo.MqttDemo;
+package com.liang.demo.MQTT;
 
 /**
  * @Author Li Yang
