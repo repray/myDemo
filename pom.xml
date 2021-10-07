@@ -59,6 +59,12 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
+<!--        rabbitMQ依赖-->
+        <dependency>
+            <groupId>com.rabbitmq</groupId>
+            <artifactId>amqp-client</artifactId>
+            <version>5.4.3</version>
+        </dependency>
 
     </dependencies>
 
