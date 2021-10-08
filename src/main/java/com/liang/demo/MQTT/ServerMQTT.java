@@ -20,9 +20,9 @@ public class ServerMQTT {
     //tcp://MQTT安装的服务器地址:MQTT定义的端口号
     public static final String HOST = "tcp://127.0.0.1:1883";
     //定义一个主题
-    public static final String TOPIC = "topic11";
+    public static final String TOPIC = "topic";
     //定义MQTT的ID，可以在MQTT服务配置中指定
-    private static final String clientid = "server11";
+    private static final String clientid = "server";
 
     private MqttClient client;
     private MqttTopic topic11;
@@ -74,8 +74,8 @@ public class ServerMQTT {
             MqttException {
         MqttDeliveryToken token = topic.publish(message);
         token.waitForCompletion();
-        System.out.println("message is published completely! "
-                + token.isComplete());
+//        System.out.println("message is published completely! " + token.isComplete());
+        System.out.println("消息发送成功 " + token.isComplete());
     }
 
     /**
@@ -88,9 +88,9 @@ public class ServerMQTT {
         ServerMQTT server = new ServerMQTT();
         server.message = new MqttMessage();
         server.message.setQos(1);
-        server.message.setRetained(true);
-        server.message.setPayload("hello,topic11".getBytes());
+        server.message.setRetained(false);
+        server.message.setPayload("HelloWorld".getBytes());
         server.publish(server.topic11, server.message);
-        System.out.println(server.message.isRetained() + "------ratained状态");
+        System.out.println("ratained状态------"+server.message.isRetained());
     }
 }
