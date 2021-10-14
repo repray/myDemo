@@ -6,13 +6,13 @@ package com.liang.demo.MQTT;
  * mqtt-消息接受客户端
  */
 
-import java.util.concurrent.ScheduledExecutorService;
-
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttTopic;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
+
+import java.util.concurrent.ScheduledExecutorService;
 
 public class ClientMQTT {
 

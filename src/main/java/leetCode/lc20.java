@@ -1,7 +1,5 @@
 package leetCode;
 
-import java.util.List;
-
 /**
  * @Author Li Yang
  * @Created on 2021/8/30.

@@ -2,6 +2,8 @@ package com.liang.demo;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.Arrays;
+
 /**
  * @Author Li Yang
  * @Created on 2021/9/6.
@@ -22,6 +24,9 @@ public class classCodeUtil {
 //        System.out.println(getCode(31432));
 //        System.out.println(getCode(31453));
         System.out.println(analysisCode("230970"));
+
+        String aa = "12334______456456______123123";
+        System.out.println(Arrays.toString(aa.split("______")));
 
 
     }
