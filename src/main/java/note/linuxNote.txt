@@ -1,0 +1,7 @@
+grep "abc" web-info.log |grep "test"
+在包含abc的结果中查找带test的日志
+
+vi编辑文件
+按i进入编辑模式
+:wq保存退出
+:q!强制退出不保存
