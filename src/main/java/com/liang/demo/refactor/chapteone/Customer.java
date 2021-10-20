@@ -66,33 +66,35 @@ public class Customer {
      * 第一次重构
      * double正确写法是小写开头...
      *
-     * @param each
+     * 第二次重构
+     * 修改amountFor方法入参和返回值名称
+     * @param aRental
      * @return
      */
-    private double amountFor(Rental each) {
-        double thisAmount = 0;
+    private double amountFor(Rental aRental) {
+        double result = 0;
         //判断各种类型电影的总金额
-        switch (each.getMovie().getPriceCode()) {
+        switch (aRental.getMovie().getPriceCode()) {
             case Movie.REGULAR:
                 //起步2元
-                thisAmount += 2;
+                result += 2;
                 //普通电影,当天数大于2天时,每天按1.5元收费
-                if (each.getDaysRented() > 2) {
-                    thisAmount += (each.getDaysRented() - 2) * 1.5;
+                if (aRental.getDaysRented() > 2) {
+                    result += (aRental.getDaysRented() - 2) * 1.5;
                 }
                 break;
             //新电影,按每天3元收费
             case Movie.NEW_RELEASE:
-                thisAmount += each.getDaysRented() * 3;
+                result += aRental.getDaysRented() * 3;
                 break;
             //儿童电影,起步1.5元,大于3天时,按每天1.5元收费
             case Movie.CHILDENS:
-                thisAmount += 1.5;
-                if (each.getDaysRented() > 3) {
-                    thisAmount += (each.getDaysRented() - 3) * 1.5;
+                result += 1.5;
+                if (aRental.getDaysRented() > 3) {
+                    result += (aRental.getDaysRented() - 3) * 1.5;
                 }
                 break;
         }
-        return thisAmount;
+        return result;
     }
 }
