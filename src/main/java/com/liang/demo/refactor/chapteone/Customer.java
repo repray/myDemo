@@ -43,8 +43,11 @@ public class Customer {
             /**
              * 判断各种类型电影的总金额
              * 第一次 重构
+             *
+             * 修改方法引用
+             * 第四次重构
              */
-            totalAmount = this.amountFor(each);
+            thisAmount = each.getCharge();
             //常租点数+1;
             frequentRenterPoints++;
             //电影价格由调用参数时传入,与电影实体类中的固定值像比较
@@ -53,7 +56,7 @@ public class Customer {
                 frequentRenterPoints++;
             }
             result += "\t" + each.getMovie().get_title() + "\t" + String.valueOf(thisAmount) + "\n";
-            thisAmount += totalAmount;
+            totalAmount += thisAmount;
         }
         //输出结果
         result += "Amount owed is " + String.valueOf(totalAmount) + "\n";
@@ -65,10 +68,10 @@ public class Customer {
      * 将switch代码段提取成方法
      * 第一次重构
      * double正确写法是小写开头...
-     *
+     * <p>
      * 第二次重构
      * 修改amountFor方法入参和返回值名称
-     *
+     * <p>
      * 第三次重构
      * 修改amountFor方法位置从Customer到Rental
      * 并改名为getCharge,并改变方法内引用
