@@ -1,6 +1,12 @@
 grep "abc" web-info.log |grep "test"
 在包含abc的结果中查找带test的日志
 
+grep "123456789" /logs/demo/info.log -A 5 -B 5
+根据关键字查询
+-A 5 -B 5 查询关键字前后五行
+grep "123456789" /logs/demo/info.log -A 5 -B 5 | wc -l
+|wc -l 统计该关键字在该文件中出现的次数
+
 vi编辑文件
 按i进入编辑模式
 :wq保存退出
@@ -11,3 +17,6 @@ less 浏览文件，支持翻页和搜索，支持向上翻页和向下翻页
 按f 或 space 向下翻一页 按b向前翻一页;f->forward 向前;b->backward 向后
 more
 cat cat为一次性将全部页面输出到前端
+
+查找指定文件的指定行数
+cat server-info.log |tail -n 834920 |head -n 100
