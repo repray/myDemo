@@ -8,6 +8,7 @@ import java.util.Vector;
  * @Created 2021/10/14
  * @desc 重构第一章demo
  * 消费者类及实现方法
+ * https://gitee.com/mrlijing/code-refactor 可参考重构第二部 第一章java案例
  */
 public class Customer {
 
