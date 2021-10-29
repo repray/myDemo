@@ -1,4 +1,4 @@
-package com.liang.demo;
+package com.liang.demo.NewCharacter;
 
 import entity.User;
 
@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
  * @Created on 2021/10/11.
  * @Desc jdk新特性
  */
-public class JDKNewCharacter {
+public class TestStreamFilter {
 
     public static void main(String[] args) {
 
