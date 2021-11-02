@@ -8,10 +8,10 @@ package leetCode;
 public class lc575 {
 
     public static void main(String[] args) {
-
+//    distributeCandies()
     }
 
-    public int distributeCandies(int[] candyType) {
+    public static int distributeCandies(int[] candyType) {
         return 1;
     }
 }
