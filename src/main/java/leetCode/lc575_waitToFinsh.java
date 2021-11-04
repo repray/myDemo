@@ -5,7 +5,7 @@ package leetCode;
  * @date : 2021/11/1
  * https://leetcode-cn.com/problems/distribute-candies/
  */
-public class lc575 {
+public class lc575_waitToFinsh {
 
     public static void main(String[] args) {
 //    distributeCandies()
