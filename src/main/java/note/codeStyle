@@ -17,3 +17,14 @@
 /**
  *
  */
+
+8.包名统一使用小写,不要使用驼峰命名
+反例: package leetCode;
+正例: package leetcode;
+
+9.类名应首字母大写,驼峰命名法 UpperCamelCase ;
+反例 LeetCode575
+正例 LeetCode575
+
+10.方法名、参数名、成员变量、局部变量都统一使用 lowerCamelCase 风格.
+ localValue / getHttpMessage() / inputUserId

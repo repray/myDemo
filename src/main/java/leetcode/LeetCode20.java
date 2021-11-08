@@ -1,4 +1,4 @@
-package leetCode;
+package leetcode;
 
 /**
  * @Author Li Yang
@@ -6,7 +6,7 @@ package leetCode;
  * @Desc https://leetcode-cn.com/problems/valid-parentheses/
  * 状态:未完成全部测试用例,待修改
  */
-public class lc20 {
+public class LeetCode20 {
 
     public static void main(String[] args) {
         String s = "(){}}{";

@@ -1,4 +1,4 @@
-package leetCode;
+package leetcode;
 
 /**
  * @author : liyang
@@ -6,7 +6,7 @@ package leetCode;
  * 剑指 Offer 10- I. 斐波那契数列
  * https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/
  */
-public class lcSword10 {
+public class LeetCodeSword10 {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package leetCode;
+package leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
  * @Desc 881. 救生艇  https://leetcode-cn.com/problems/boats-to-save-people/
  * 未过测试,待完善
  */
-public class lc881 {
+public class LeetCode881 {
 
     public static void main(String[] args) {
         int[] people = {3, 2, 2, 1};

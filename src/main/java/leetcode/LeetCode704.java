@@ -1,11 +1,11 @@
-package leetCode;
+package leetcode;
 
 /**
  * @author : liyang
  * @date : 2021/9/6
  * link: https://leetcode-cn.com/problems/binary-search/
  */
-public class lc704 {
+public class LeetCode704 {
     public static void main(String[] args) {
         int[] nums = {-1, 0, 3, 5, 9, 12};
         int target = -2;

@@ -1,11 +1,11 @@
-package leetCode;
+package leetcode;
 
 /**
  * @Author Li Yang
  * @Created on 2021/8/16.
  * @Desc 7. 整数反转  https://leetcode-cn.com/problems/reverse-integer/
  */
-public class lt7 {
+public class LeetCode7 {
 
     public static void main(String[] args) {
         int reverse = reverse(1534236469);

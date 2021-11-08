@@ -1,4 +1,4 @@
-package leetCode;
+package leetcode;
 
 import com.alibaba.fastjson.JSONArray;
 
@@ -7,7 +7,7 @@ import com.alibaba.fastjson.JSONArray;
  * @Created on 2021/8/18.
  * @Desc 832. 翻转图像 https://leetcode-cn.com/problems/flipping-an-image/
  */
-public class lc832 {
+public class LeetCode832 {
     public static void main(String[] args) {
         int[][] image = new int[][]{{1, 1, 0}, {1, 0, 1}, {0, 0, 0}};
         System.out.println(JSONArray.toJSONString(flipAndInvertImage(image)));

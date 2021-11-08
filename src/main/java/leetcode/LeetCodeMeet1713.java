@@ -1,11 +1,11 @@
-package leetCode;
+package leetcode;
 
 /**
  * @Author Li Yang
  * @Created on 2021/8/18.
  * @Desc 面试题 17.13. 恢复空格  https://leetcode-cn.com/problems/re-space-lcci/
  */
-public class lcmst1713 {
+public class LeetCodeMeet1713 {
 
     public static void main(String[] args) {
         String[] dictionary = {"bt", "vbtbvtvvbbvtbvvbbbvbtbbv", "bvvbbbvvvbvttbtbvtvtvvbttbbbtvvvb", "btttbvbbbtbbtbvvttbvbvtvbtbbttb", "bt", "vvbvbvbvtbvbvvvvtv", "tbvvvtttvtbvbtttvvbtvvvvtvvbvvtvvbbvbbbvb", "v", "bvb", "vvtbvtvbttbttvvbvttbt", "btbtbtttvbbtbttbtvvttbvtbtvtbvvtbbbb", "bttbvbbttvvbtvvvvb", "bvvbvbvttbvtbvvtbttvvvvtvbtvbttbbvvtvtvv", "vbtttt", "btbvbbbvbtvtbvvv", "b", "tbtbtv", "vbvbbvvbvbbvvb", "vbvvtvbvbvbttvbvbtvbtbtvtbvbbtb", "bvvbvvttttttbtvvvttvbvtvvbvtbtvtbvttvvtbt", "bvtbttv", "bbbt", "vtt", "ttvv", "b", "vbb", "vtvvbtttvtbbvvbbtbb", "vvv", "vvvvbbbtbbbvbbbb", "ttvvbtvv", "v", "btvbbvtbbvbvtvttvvbbbtbvvvtbtb", "vv", "btbttbtbbvbvvbvttbttvtbbtbvtttvbbtbbtvtvvvvbbttvtvvbbbv", "ttvbbbbttbtbtb", "tvvbvbvvb", "vv", "ttbttvtvbtbbbbv", "bvvvtbbvvvbtvbvtvtvvvvbb", "vtbvvbvvvvvttvbbttbbvtvt", "tbvbbt", "b", "v", "tvbbtvvtvvtbtbttvvvb", "tbttbttbbbtbtvtvtvtbbbvvtbbbvbbvvvbbttvvt", "bbvttvtvvtbvbbttvbbtbvvttbvbvbtbvvvbbbvbvbvbtvbtvvvtvvtbttbttbbvbbbttvvvbvvtb", "vttvvbvv", "tbttbvvttvbtvvtbbvvv", "bvbbbbbbbb", "vtbvvtbbvtt", "bvttbvvbvb", "tvttttbbvvvbbtttvvv"};

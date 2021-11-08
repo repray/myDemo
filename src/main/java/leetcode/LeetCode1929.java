@@ -1,4 +1,4 @@
-package leetCode;
+package leetcode;
 
 
 /**
@@ -8,7 +8,7 @@ package leetCode;
  * 难度 简单
  * @tips 力扣算法题通常不允许使用现成的工具类
  */
-public class lt1929 {
+public class LeetCode1929 {
     public static void main(String[] args) {
         int[] nums = {0, 1, 2};
         System.out.println(getConcatenation(nums));

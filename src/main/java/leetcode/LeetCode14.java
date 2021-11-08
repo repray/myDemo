@@ -1,4 +1,4 @@
-package leetCode;
+package leetcode;
 
 /**
  * @Author Li Yang
@@ -6,7 +6,7 @@ package leetCode;
  * @Desc 14. 最长公共前缀  https://leetcode-cn.com/problems/longest-common-prefix/
  */
 
-public class lc14 {
+public class LeetCode14 {
     public static void main(String[] args) {
 //        String[] strs = {"abab", "aba", ""};
 //        System.out.println(this.longestCommonPrefix(strs));

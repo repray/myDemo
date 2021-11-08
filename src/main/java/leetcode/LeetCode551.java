@@ -1,4 +1,4 @@
-package leetCode;
+package leetcode;
 
 /**
  * @Author Li Yang
@@ -7,7 +7,7 @@ package leetCode;
  * 难度 简单
  * tips 力扣可以使用jdk原生的工具类
  */
-public class lt551 {
+public class LeetCode551 {
 
     public static void main(String[] args) {
         System.out.println(checkRecord("PPALAL"));

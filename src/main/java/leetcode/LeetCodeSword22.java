@@ -1,4 +1,4 @@
-package leetCode;
+package leetcode;
 
 /**
  * @author : liyang
@@ -7,7 +7,7 @@ package leetCode;
  * https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/
  */
 
-public class lcSword22 {
+public class LeetCodeSword22 {
     public static void main(String[] args) {
         //声明链表
         ListNode firstNode = new ListNode(1);
