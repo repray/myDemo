@@ -44,17 +44,13 @@ public class LeetCode1408 {
     }
 
     /**
-     * 执行用时：6 ms, 在所有 Java 提交中击败了20.11%的用户
-     * 内存消耗：38.7 MB, 在所有 Java 提交中击败了15.28%的用户
+     * 执行用时：4 ms, 在所有 Java 提交中击败了67.29%的用户
+     * 内存消耗：38.4 MB, 在所有 Java 提交中击败了65.95%的用户
      * 代码执行用时,内存消耗都需要优化
      */
     public static List<String> stringMatching(String[] words) {
-        TreeSet<String> set = new TreeSet<>();
-        for (String word : words) {
-            set.add(word);
-        }
         List<String> subset = new ArrayList<>();
-        for (String s : set) {
+        for (String s : words) {
             int num = 0;
             for (String word : words) {
                 if (word.contains(s)) {
