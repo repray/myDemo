@@ -26,4 +26,20 @@ public class LeetCode1816 {
         replace = replace.substring(1, replace.length() - 1);
         return replace;
     }
+
+    /**
+     * 更好的解法,效率更高
+     */
+    public static String betterMethodTruncateSentence(String s, int k) {
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == ' ') {
+                count++;
+                if (count == k) {
+                    return s.substring(0, i);
+                }
+            }
+        }
+        return s;
+    }
 }
