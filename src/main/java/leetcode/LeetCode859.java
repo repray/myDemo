@@ -48,30 +48,92 @@ public class LeetCode859 {
             return false;
         } else if (s.equals(goal)) {
             //如果s等于goal,则s或goal中有重复的元素则,说明s和goal为亲密字符串,举例.abcd 和abcd 无论如何变化,abcd都不会等于变化后的abcd,abca和abca,则可以在第一位和第四位的a调整位置后得到
-            for (int i = 0; i < s.length(); i++) {
-                char c = s.charAt(i);
-                if (s.indexOf(c) != s.lastIndexOf(c)) {
-                    return true;
-                }
-            }
-            return false;
+            return checkSameWord(s);
         } else {
-            int count = 0;
-            String ss = "";
-            String gg = "";
-            for (int i = 0; i < s.length(); i++) {
-                if (s.charAt(i) != goal.charAt(i)) {
-                    ss = ss + s.charAt(i);
-                    gg = gg + goal.charAt(i);
-                    count++;
-                }
+            return checkNotSameWord(s, goal);
+        }
+    }
+
+    private static boolean checkNotSameWord(String s, String goal) {
+        int count = 0;
+        String ss = "";
+        String gg = "";
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) != goal.charAt(i)) {
+                ss = ss + s.charAt(i);
+                gg = gg + goal.charAt(i);
+                count++;
             }
-            if (count == 2) {
-                if (ss.charAt(0) == gg.charAt(1) && ss.charAt(1) == gg.charAt(0)) {
-                    return true;
+        }
+        if (count == 2) {
+            if (ss.charAt(0) == gg.charAt(1) && ss.charAt(1) == gg.charAt(0)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static boolean checkSameWord(String s) {
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (s.indexOf(c) != s.lastIndexOf(c)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+    private static boolean checkLike(String str1,String str2) {
+
+        if (str1.length() == 1 || str1.length() != str2.length()) {
+            System.out.println("长度不对");
+            return false;
+        }
+
+        /*
+         * 相同情况
+         * */
+        if (str1.equals(str2)) {
+            System.out.println("相同时候的问题");
+            return checkSmall(str1) ;
+        }
+        //不同情况
+        return checkStrSmall(str1,str2);
+
+    }
+
+    /**
+     * 字符串中是否有相同的字符
+     * */
+    private static boolean checkSmall(String str) {
+        char[] chars = str.toCharArray();
+        char tmpC;
+        for (int i = 0; i < chars.length; i++) {
+            tmpC = chars[i];
+            if (i != str.lastIndexOf(tmpC)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static boolean checkStrSmall(String str1,String str2) {
+        char c1 = 0, c2 = 0;
+        char[] chars1 = str1.toCharArray();
+        char[] chars2 = str2.toCharArray();
+        for (int i = 0; i < chars1.length; i++) {
+            if (chars1[i] != chars2[i]) {
+                if (c1 == 0 && c2 == 0) {
+                    c1 = chars1[i];
+                    c2 = chars2[i];
+                } else {
+                    return c1 == chars2[i] && c2 == chars1[i] && str1.substring(i + 1).equals(str2.substring(i + 1));
                 }
             }
         }
         return false;
     }
+
 }
