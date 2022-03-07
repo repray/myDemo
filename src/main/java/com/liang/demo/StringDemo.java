@@ -1,6 +1,10 @@
 package com.liang.demo;
 
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author : liyang
@@ -67,5 +71,14 @@ public class StringDemo {
         //concat 在原有的字符串的基础上加上指定字符串
         System.out.println(str2.concat("i love code!"));
         //常用的String类方法,大概就是这些了吧,以后就不再更新了
+
+        //String字符串转数组
+        String A = "AAA";
+        String[] split = A.split(",");
+        //list转字符串
+        List<String> list = new ArrayList<>();
+        list.add("Mxy");
+        String AB = StringUtils.join(list,",");
+        System.out.println(split);
     }
 }
