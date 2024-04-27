@@ -8,7 +8,7 @@ import java.util.List;
  * @Created on 2021/10/25.
  * @Desc
  */
-public class arrDemo {
+public class ArrDemo {
 
     public static void main(String[] args) {
         List<Long> oldClassIds = new ArrayList<>();

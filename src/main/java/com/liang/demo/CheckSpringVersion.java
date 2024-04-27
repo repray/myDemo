@@ -6,7 +6,7 @@ import org.springframework.core.SpringVersion;
 /**
  * 查看spring版本号
  */
-public class checkSpringVersion {
+public class CheckSpringVersion {
 
     public static void main(String[] args) {
         String sVersion = SpringVersion.getVersion();

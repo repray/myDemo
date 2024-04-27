@@ -7,7 +7,7 @@ import java.util.Stack;
  * @Created on 2021/8/31.
  * @Desc 栈类型方法的demo
  */
-public class stackDemo {
+public class StackDemo {
 
     public static void main(String[] args) {
         Stack<String> stack = new Stack<>();

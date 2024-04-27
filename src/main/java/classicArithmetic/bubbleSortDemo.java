@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @Created on 2021/8/25.
  * @Desc 冒泡排序
  */
-public class bubbleSort {
+public class bubbleSortDemo {
 
     public static void main(String[] args) {
         int[] arr = new int[]{2, 8, 7, 9, 4, 1, 5, 0};

@@ -5,7 +5,7 @@ package com.liang.demo;
  * @author : liyang
  * @date : 2021/9/4
  */
-public class listNodeDemo {
+public class ListNodeDemo {
     public static void main(String[] args) {
         //声明链表
         ListNode firstNode = new ListNode(1);

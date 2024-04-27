@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @Created on 2021/8/27.
  * @Desc 选择排序
  */
-public class selectSort {
+public class SelectSortDemo {
 
     public static void main(String[] args) {
         int array[] = {38, 21, 15, 48, 91, 3, 62, 79, 86, 54};
