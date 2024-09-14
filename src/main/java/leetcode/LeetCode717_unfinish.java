@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
  * link: https://leetcode-cn.com/problems/1-bit-and-2-bit-characters/
  * @Desc 717. 1比特与2比特字符
  */
-public class LeetCode717 {
+public class LeetCode717_unfinish {
     public static void main(String[] args) {
         int[] bits = {1,0};
         System.out.println(isOneBitCharacter(bits));

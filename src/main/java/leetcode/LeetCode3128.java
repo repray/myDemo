@@ -12,6 +12,13 @@ public class LeetCode3128 {
     }
 
     public static long numberOfRightTriangles(int[][] grid) {
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) { // 遍历列
+             if((grid[i][j])==1){
+
+             }
+            }
+        }
         return 0l;
     }
 }
