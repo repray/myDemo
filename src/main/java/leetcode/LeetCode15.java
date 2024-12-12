@@ -1,8 +1,9 @@
 package leetcode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * @author: Li Yang
@@ -31,7 +32,7 @@ import java.util.stream.Collectors;
  */
 public class LeetCode15 {
     public static void main(String[] args) {
-        int[] nums = {0,0,0,0};
+        int[] nums = {-1, 0, 1, 2, -1, -4};
         System.out.println(threeSum(nums));
     }
 
@@ -42,20 +43,19 @@ public class LeetCode15 {
      */
     public static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> resultList = new ArrayList<>();
-        List<Integer> list = new ArrayList<>();
-        for (int num : nums) {
-            list.add(num);
-        }
+        Arrays.sort(nums);
         for (int k = 0; k < nums.length; k++) {
-            int targetNum = nums[k];
-            for (int i = 1; i < list.size(); i++) {
-                for (int j = 2; j < list.size(); j++) {
-                    if (i != j && j != k && i != k && list.get(i) + list.get(j) + targetNum == 0) {
+            for (int i = 1; i < nums.length; i++) {
+                for (int j = 2; j < nums.length; j++) {
+                    if (nums[k] > 0) {
+                        break;
+                    }
+                    if (i != j && j != k && i != k && nums[i] + nums[j] + nums[k] == 0) {
                         List<Integer> integerList = new ArrayList<>();
-                        integerList.add(targetNum);
-                        integerList.add(list.get(i));
-                        integerList.add(list.get(j));
-                        integerList = integerList.stream().sorted().collect(Collectors.toList());
+                        integerList.add(nums[k]);
+                        integerList.add(nums[i]);
+                        integerList.add(nums[j]);
+                        Collections.sort(integerList);
                         if (!resultList.contains(integerList)) {
                             resultList.add(integerList);
                         }
@@ -65,4 +65,5 @@ public class LeetCode15 {
         }
         return resultList;
     }
+
 }
